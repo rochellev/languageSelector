@@ -6,8 +6,9 @@
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
-    //debugger;
+
     // get user input for each question
+    var name = $("input#name").val();
     var morning = $("input:radio[name=question1]:checked").val();
     var catDog = $("input:radio[name=question2]:checked").val();
     var popularLang = $("input:radio[name=question3]:checked").val();
@@ -16,7 +17,14 @@ $(document).ready(function () {
     var gameDev = $("input:radio[name=question6]:checked").val();
     var threads = $("input:radio[name=question7]:checked").val();
 
-    if (popularLang === "no") {
+    if(name){
+      $(".nameOutput").text(name);
+    }else {
+      $(".nameOutput").text("Friend");
+    }
+     
+
+    if(popularLang === "no" && memory === "no"){
       $("#javascript").hide();
       $("#java").hide();
       $("#cplusplus").hide();
@@ -31,11 +39,17 @@ $(document).ready(function () {
       $("#java").show();
       $("#cplusplus").hide();
       $("#python").hide();
-    }else if(morning === "yes" && catDog === "cat-dog" || epicodus === "yes"){
+    }else if(memory === "no") {
+      $("#javascript").show();
+      $("#java").hide();
+      $("#cplusplus").hide();
+      $("#python").hide();
+    }else{
       $("#javascript").show();
       $("#java").hide();
       $("#cplusplus").hide();
       $("#python").hide();
     }
-  });
+
+    });
 });

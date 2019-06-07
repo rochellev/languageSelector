@@ -16,6 +16,11 @@
         <h5>This quiz will help you determine what language you should start learning <em>first</em>. Let's find out!
         </h5>
         <form id="quiz">
+            <!-- User input their Name -->
+            <div>
+                <label for="name">What is your Name</label>
+                <input id="name" type="text">
+            </div>
             <!-- Question 1, morning person -->
             <div class="questionColor1">
                 <p class="questionText">Are you a morning person?</p>
@@ -148,14 +153,38 @@
             </div>
             <button type="submit" class="btn-default">Calculate Results!</button>
         </form>
+        <br>
         <!-- Output objects -->
-        <div id="javascript"> javascript
-
+        <div id="javascript">
+            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+            <p>
+                You matched with <strong>JavaScript</strong>! JavaScript is currently one of the most popular languages.
+                This is a good option if you do not want to be responsible for managing memory!
+                Click <a href="https://www.w3schools.com/js/">Here</a> for a quick intro to JavaScript!
+            </p>
         </div>
-        <div id="java"> java </div>
-        <div id="cplusplus"> c++ </div>
-        <div id="python"> python </div>
-        
+        <div id="java"> java
+                <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+                <p>
+                    You matched with <strong>Java</strong>! Java is a great option since you want to make multi-threaded programs.
+                    Click <a href="https://www.w3schools.com/js/">Here</a> for a quick intro to JavaScript!
+                </p>
+        </div>
+        <div id="cplusplus">
+            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+            <p>
+                You matched with <strong>C++</strong>! C++ a great language if you are interested in video game
+                development. Also, C++ provides the tools to do some memory management.
+                Click <a href="https://www.codecademy.com/learn/learn-c-plus-plus">Here</a> for a quick intro to C++!
+            </p>
+        </div>
+        <div id="python"> python
+            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+            <p>
+                You matched with <strong>Pyton</strong>! Python is great. Though not as popular as JavaScript nor C++, Python offers versatility.
+                Click <a href="https://www.codecademy.com/learn/learn-python">Here</a> for a quality intro to Python!
+            </p>
+        </div>
     </div>
 </body>
 
