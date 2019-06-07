@@ -1,8 +1,3 @@
-// back-end logic
-
-
-
-// front-end logic
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
@@ -23,7 +18,6 @@ $(document).ready(function () {
       $(".nameOutput").text("Friend");
     }
      
-
     if(popularLang === "no" && memory === "no"){
       $("#javascript").hide();
       $("#java").hide();
@@ -49,6 +43,17 @@ $(document).ready(function () {
       $("#java").hide();
       $("#cplusplus").hide();
       $("#python").hide();
+    }
+
+    if(catDog === "cat"){
+      $("#doglover").hide();
+      $("#catlover").show();
+    }else if(catDog === "dog"){
+      $("#catlover").hide();
+      $("#doglover").show();
+    }else{
+      $("#catlover").show();
+      $("#doglover").show();
     }
 
     });

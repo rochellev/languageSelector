@@ -1,3 +1,6 @@
+body {
+    background-color: lightgray;
+}
 .questionText {
     margin: 0%;
     font-size: 15pt;
@@ -15,17 +18,12 @@
     margin: 1px;
 }
 
-#javascript {
-    display: none;
+/* output objects hidden */
+#python, #java, #javascript, #catlover, #doglover, #cplusplus {
+    display: none
 }
 
-#java {
-    display: none;
-}
-
-#cplusplus {
-    display: none;
-}
-#python {
-    display: none;
+img {
+    max-width: 50%;
+    max-height: auto;
 }
