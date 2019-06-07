@@ -14,3 +14,18 @@
 .smallbottom {
     margin: 1px;
 }
+
+#javascript {
+    display: none;
+}
+
+#java {
+    display: none;
+}
+
+#cplusplus {
+    display: none;
+}
+#python {
+    display: none;
+}

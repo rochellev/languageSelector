@@ -1,3 +1,8 @@
+// back-end logic
+
+
+
+// front-end logic
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
@@ -10,6 +15,15 @@ $(document).ready(function () {
     var epicodus = $("input:radio[name=question5]:checked").val();
     var gameDev = $("input:radio[name=question6]:checked").val();
     var threads = $("input:radio[name=question7]:checked").val();
+
+    if(morning){
+      $("#javascript").show();
+      $("#java").hide();
+      $("#cplusplus").hide();
+      $("#python").hide();
+    }
+
+
 
   });
 });
