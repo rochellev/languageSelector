@@ -6,7 +6,7 @@
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
-    debugger;
+    //debugger;
     // get user input for each question
     var morning = $("input:radio[name=question1]:checked").val();
     var catDog = $("input:radio[name=question2]:checked").val();
@@ -16,14 +16,26 @@ $(document).ready(function () {
     var gameDev = $("input:radio[name=question6]:checked").val();
     var threads = $("input:radio[name=question7]:checked").val();
 
-    if(morning){
+    if (popularLang === "no") {
+      $("#javascript").hide();
+      $("#java").hide();
+      $("#cplusplus").hide();
+      $("#python").show();
+    }else if(memory === "yes" && gameDev === "yes"){
+      $("#javascript").hide();
+      $("#java").hide();
+      $("#cplusplus").show();
+      $("#python").hide();
+    }else if(memory === "yes" && threads === "yes"){
+      $("#javascript").hide();
+      $("#java").show();
+      $("#cplusplus").hide();
+      $("#python").hide();
+    }else if(morning === "yes" && catDog === "cat-dog" || epicodus === "yes"){
       $("#javascript").show();
       $("#java").hide();
       $("#cplusplus").hide();
       $("#python").hide();
     }
-
-
-
   });
 });
