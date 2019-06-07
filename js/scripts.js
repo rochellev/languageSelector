@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
@@ -55,6 +57,7 @@ $(document).ready(function () {
       $("#catlover").show();
       $("#doglover").show();
     }
+    window.scrollBy(0,300);
 
     });
 });
