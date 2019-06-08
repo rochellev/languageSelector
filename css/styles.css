@@ -1,10 +1,8 @@
 body {
-    background-color: #727072;
+    background-color: #D3D0CB;
 }
 .header {
     margin-top: 32px;
-    border-color: #114849;
-    border-width: 10pt;
 }
 .formDisplay {
     text-align: center;
@@ -18,18 +16,25 @@ body {
     font-size: 15pt;
     display: inline-block;
     max-width: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    
 }
 
 .questionColor1 {
-    background-color: #AF929D;
+    background-color: #605770;
+    color: #C1BEBA;
 }
 
 .questionColor2 {
-    background-color: #D2D6EF;
+    background-color: #4D4861;
+    color: #D3D0CB;
 }
 
-.smallbottom {
+.radioDisplay {
     margin: 1px;
+    padding: 3px;
+    padding-left: 10px;
 }
 
 /* output objects hidden */
@@ -37,7 +42,15 @@ body {
     display: none
 }
 
+.outputDisplay {
+    background-color: #9E7682;
+}
+
 img {
     max-width: 50%;
     max-height: auto;
+}
+
+.nameQuestion {
+    padding: 5px;
 }

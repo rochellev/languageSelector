@@ -21,139 +21,160 @@
 
         <form id="quiz" class="formDisplay">
             <!-- User input their Name -->
-            <div>
+            <div class="form-group questionColor2 nameQuestion">
                 <label for="name">What is your Name</label>
                 <input id="name" type="text">
             </div>
             <!-- Question 1, morning person -->
-            <div class="questionColor1">
+            <div class="questionColor1 form-group">
                 <p class="questionText">Are you a morning person?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question1" value="yes" checked>
-                        Yes! I love morning time!
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question1" value="no" checked>
-                        Gross! I like to sleep in.
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question1" value="yes" checked>
+                            Yes! I love morning time!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question1" value="no" checked>
+                            Gross! I like to sleep in.
+                        </label>
+                    </div>
                 </div>
             </div>
             <!-- Question 2, cats or dogs -->
-            <div class="questionColor2">
+            <div class="questionColor2 form-group">
                 <p class="questionText">Do you prefer cats or dogs?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question2" value="cat" checked>
-                        Cats Rule!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question2" value="cat" checked>
+                            Cats Rule!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question2" value="dog" checked>
+                            Dogs Rule!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question2" value="cat-dog" checked>
+                            Can't decide... I love them both!
+                        </label>
+                    </div>
+
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question2" value="dog" checked>
-                        Dogs Rule!
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question2" value="cat-dog" checked>
-                        Can't decide... I love them both!
-                    </label>
-                </div>
+
             </div>
             <!-- Question 3, popular language -->
-            <div class="questionColor1">
+            <div class="questionColor1 form-group">
                 <p class="questionText">Do you want to learn a popular programming language?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question3" value="yes" checked>
-                        Yes!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question3" value="yes" checked>
+                            Yes!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question3" value="no" checked>
+                            No.
+                        </label>
+                    </div>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question3" value="no" checked>
-                        No.
-                    </label>
-                </div>
+
             </div>
             <!-- Question 4, memory management  -->
-            <div class="questionColor2">
+            <div class="questionColor2 form-group">
                 <p class="questionText">Are you interested in memory management?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question4" value="yes" checked>
-                        Yes!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio smallbottom">
+                        <label>
+                            <input type="radio" name="question4" value="yes" checked>
+                            Yes!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question4" value="no" checked>
+                            I would prefer to not think about memory too much.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question4" value="no" checked>
+                            What's "memory management"?
+                        </label>
+                    </div>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question4" value="no" checked>
-                        I would prefer to not think about memory too much.
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question4" value="no" checked>
-                        What's "memory management"?
-                    </label>
-                </div>
+
             </div>
             <!-- Question 5, epicodus -->
-            <div class="questionColor1">
+            <div class="questionColor1 form-group">
                 <p class="questionText">Are you enrolled in Epicodus?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question5" value="yes" checked>
-                        Yes! And loving it!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio btn-default">
+                        <label>
+                            <input type="radio" name="question5" value="yes" checked>
+                            Yes! And loving it!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question5" value="no" checked>
+                            No.
+                        </label>
+                    </div>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question5" value="no" checked>
-                        No.
-                    </label>
-                </div>
+
             </div>
             <!-- Question 6, game development c++ -->
-            <div class="questionColor2">
+            <div class="questionColor2 form-group">
                 <p class="questionText">Are you interested in game development?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question6" value="yes" checked>
-                        Yes!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question6" value="yes" checked>
+                            Yes!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question6" value="no" checked>
+                            No.
+                        </label>
+                    </div>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question6" value="no" checked>
-                        No.
-                    </label>
-                </div>
+
             </div>
             <!-- Question 7, threads -->
-            <div class="questionColor1">
+            <div class="questionColor1 form-group">
                 <p class="questionText">Do you want to write Multi-Threaded programs?</p>
-                <div class="radio smallbottom">
-                    <label>
-                        <input type="radio" name="question7" value="yes" checked>
-                        Yes!
-                    </label>
+                <div class="radioDisplay">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question7" value="yes" checked>
+                            Yes!
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question7" value="no" checked>
+                            No.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="question7" value="no" checked>
+                            Hmmm... Not sure....
+                        </label>
+                    </div>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question7" value="no" checked>
-                        No.
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="question7" value="no" checked>
-                        Hmmm... Not sure....
-                    </label>
-                </div>
+
             </div>
             <button type="submit" class="btn-default">Calculate Results!</button>
 
@@ -169,41 +190,48 @@
                 Click <a href="https://www.w3schools.com/js/">Here</a> for a quick intro to JavaScript!
             </p>
         </div>
-        <div id="java">
-            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
-            <img src="img/java.jpg" alt="java logo">
-            <p>
-                You matched with <strong>Java</strong>! Java is a great option since you want to make multi-threaded
-                programs.
-                Click <a href="https://www.w3schools.com/js/">Here</a> for a quick intro to JavaScript!
-            </p>
+        <div class="outputDisplay">
+            <div id="java">
+                <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+                <img src="img/java.jpg" alt="java logo">
+                <p>
+                    You matched with <strong>Java</strong>! Java is a great option since you want to make multi-threaded
+                    programs.
+                    Click <a href="https://www.w3schools.com/js/">Here</a> for a quick intro to JavaScript!
+                </p>
+            </div>
+            <div id="cplusplus">
+                <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+                <img src="img/cplusplus.png" alt="c plus plus logo">
+                <p>
+                    You matched with <strong>C++</strong>! C++ a great language if you are interested in video game
+                    development. Also, C++ provides the tools to do some memory management.
+                    Click <a href="https://www.codecademy.com/learn/learn-c-plus-plus">Here</a> for a quick intro to
+                    C++!
+                </p>
+            </div>
+            <div id="python">
+                <h3>Congratulations, <span class="nameOutput"></span>!</h3>
+                <img src="img/python.jpg" alt="python logo">
+                <p>
+                    You matched with <strong>Pyton</strong>! Python is great. Though not as popular as JavaScript nor
+                    C++,
+                    Python offers versatility.
+                    Click <a href="https://www.codecademy.com/learn/learn-python">Here</a> for a quality intro to
+                    Python!
+                </p>
+            </div>
+            <div id="catlover">
+                <img src="img/cat.jpg" alt="cat picture">
+                <p>Enjoy this cat picture!</p>
+            </div>
+            <div id="doglover">
+                <img src="img/pippa.jpg" alt="dog picture">
+                <p>Enjoy this dog picture!</p>
+            </div>
+
         </div>
-        <div id="cplusplus">
-            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
-            <img src="img/cplusplus.png" alt="c plus plus logo">
-            <p>
-                You matched with <strong>C++</strong>! C++ a great language if you are interested in video game
-                development. Also, C++ provides the tools to do some memory management.
-                Click <a href="https://www.codecademy.com/learn/learn-c-plus-plus">Here</a> for a quick intro to C++!
-            </p>
-        </div>
-        <div id="python">
-            <h3>Congratulations, <span class="nameOutput"></span>!</h3>
-            <img src="img/python.jpg" alt="python logo">
-            <p>
-                You matched with <strong>Pyton</strong>! Python is great. Though not as popular as JavaScript nor C++,
-                Python offers versatility.
-                Click <a href="https://www.codecademy.com/learn/learn-python">Here</a> for a quality intro to Python!
-            </p>
-        </div>
-        <div id="catlover">
-            <img src="img/cat.jpg" alt="cat picture">
-            <p>Enjoy this cat picture!</p>
-        </div>
-        <div id="doglover">
-            <img src="img/pippa.jpg" alt="dog picture">
-            <p>Enjoy this dog picture!</p>
-        </div>
+
 
     </div>
 </body>
