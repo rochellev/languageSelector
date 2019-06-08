@@ -57,6 +57,7 @@ $(document).ready(function () {
       $("#catlover").show();
       $("#doglover").show();
     }
+    $("#hideFirst").show();
     window.scrollBy(0,300);
 
     });
